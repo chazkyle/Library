@@ -8,8 +8,15 @@
       <Shortcut>dbwl</Shortcut>
     </Header>
     <Snippet>
+	  <Declarations>
+		<Literal>
+			<ID>msg</ID>
+			<ToolTip>Replace with output.</ToolTip>
+			<Default>"Message"</Default>
+		</Literal>
+	  </Declarations>
       <Code Language="CSharp">
-        <![CDATA[System.Diagnostics.Debug.WriteLine(msg);]]>
+        <![CDATA[System.Diagnostics.Debug.WriteLine($msg$);$end$]]>
       </Code>
     </Snippet>
   </CodeSnippet>
@@ -20,8 +27,15 @@
       <Shortcut>cwl</Shortcut>
     </Header>
     <Snippet>
+         <Declarations>
+		<Literal>
+			<ID>msg</ID>
+			<ToolTip>Replace with output.</ToolTip>
+			<Default>"Message"</Default>
+		</Literal>
+	  </Declarations>
       <Code Language="CSharp">
-        <![CDATA[Console.WriteLine(msg);]]>
+        <![CDATA[Console.WriteLine($msg$);$end$]]>
       </Code>
     </Snippet>
   </CodeSnippet>
